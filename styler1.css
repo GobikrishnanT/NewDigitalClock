@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    
+    width: 50%;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.innerCls{
+    font-size: 40px;
+    display: flex;
+    background-color: cornflowerblue;
+    width: 20%;
+    height: 20vh;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: linear-gradient(rgb(5, 231, 73) , rgb(231, 237, 238) , rgb(247, 247, 243));
+    box-shadow: 5px 5px rgb(3, 3, 3);
+}
+span{
+    font-size: 100px;
+    font-weight: 900;
+    display: flex;
+    background-color: rgba(243, 11, 127, 0.342);
+    width: 5%;
+    height: 17vh;
+    margin: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.active{
+    animation-name: swingdone;
+    animation-duration: 0.1s;
+    animation-timing-function: ease-in;
+}
+@keyframes swingdone {
+    0%{
+        transform: rotateX(90deg);
+    } 
+}
+
+#subBtn{
+    position: absolute;
+    width: 10%;
+    height: 5vh;
+    top: 0%;
+    right: 0%;
+    margin: 10px;
+    background: mediumturquoise;
+}
+#normalBtn{
+    position: absolute;
+    width: 10%;
+    height: 5vh;
+    top: 0%;
+    right: 15%;
+    margin: 10px;
+    background: mediumturquoise;
+}
+@media screen and (max-width : 650px) {
+    .innerCls{
+        padding: 50px;
+    }
+    span{
+        width: 30%;
+    }
+}
